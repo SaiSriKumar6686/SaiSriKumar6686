@@ -1127,6 +1127,134 @@
       transform: scaleX(1);
     }
 
+    /* ── Featured Hackathon Project Cards ── */
+    .project-card.featured {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      grid-template-rows: auto auto auto auto;
+      column-gap: 0;
+      row-gap: 0;
+      padding: clamp(30px, 5vw, 52px) clamp(26px, 4vw, 44px);
+      border: 1px solid var(--feat-border, var(--line));
+      background: var(--bg);
+    }
+
+    .project-card.featured::before {
+      height: 3px;
+      background: var(--feat-gradient, linear-gradient(90deg, transparent, var(--cy), transparent));
+    }
+
+    .project-card.featured::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: var(--feat-glow, none);
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity .6s ease;
+    }
+
+    .project-card.featured:hover::after {
+      opacity: 1;
+    }
+
+    .project-card.featured .pn,
+    .project-card.featured .pt,
+    .project-card.featured .pd,
+    .project-card.featured .ptags {
+      grid-column: 1 / -1;
+    }
+
+    /* PraanAI accent — Medical Teal */
+    .project-card.feat-praan {
+      --feat-accent: #2dd4bf;
+      --feat-accent-dim: rgba(45, 212, 191, 0.15);
+      --feat-accent-faint: rgba(45, 212, 191, 0.06);
+      --feat-accent-soft: rgba(45, 212, 191, 0.28);
+      --feat-border: rgba(45, 212, 191, 0.18);
+      --feat-gradient: linear-gradient(90deg, transparent 0%, #2dd4bf 35%, #06b6d4 65%, transparent 100%);
+      --feat-glow: radial-gradient(ellipse 60% 50% at 50% 100%, rgba(45, 212, 191, 0.06) 0%, transparent 70%);
+    }
+
+    [data-theme="light"] .project-card.feat-praan {
+      --feat-accent: #0d9488;
+      --feat-accent-dim: rgba(13, 148, 136, 0.14);
+      --feat-accent-faint: rgba(13, 148, 136, 0.06);
+      --feat-accent-soft: rgba(13, 148, 136, 0.22);
+      --feat-border: rgba(13, 148, 136, 0.22);
+      --feat-gradient: linear-gradient(90deg, transparent 0%, #0d9488 35%, #0891b2 65%, transparent 100%);
+      --feat-glow: radial-gradient(ellipse 60% 50% at 50% 100%, rgba(13, 148, 136, 0.05) 0%, transparent 70%);
+    }
+
+    /* Saagu360 accent — AgriTech Green */
+    .project-card.feat-saagu {
+      --feat-accent: #84cc16;
+      --feat-accent-dim: rgba(132, 204, 22, 0.15);
+      --feat-accent-faint: rgba(132, 204, 22, 0.06);
+      --feat-accent-soft: rgba(132, 204, 22, 0.28);
+      --feat-border: rgba(132, 204, 22, 0.18);
+      --feat-gradient: linear-gradient(90deg, transparent 0%, #84cc16 35%, #22c55e 65%, transparent 100%);
+      --feat-glow: radial-gradient(ellipse 60% 50% at 50% 100%, rgba(132, 204, 22, 0.06) 0%, transparent 70%);
+    }
+
+    [data-theme="light"] .project-card.feat-saagu {
+      --feat-accent: #4d7c0f;
+      --feat-accent-dim: rgba(77, 124, 15, 0.14);
+      --feat-accent-faint: rgba(77, 124, 15, 0.06);
+      --feat-accent-soft: rgba(77, 124, 15, 0.22);
+      --feat-border: rgba(77, 124, 15, 0.22);
+      --feat-gradient: linear-gradient(90deg, transparent 0%, #4d7c0f 35%, #16a34a 65%, transparent 100%);
+      --feat-glow: radial-gradient(ellipse 60% 50% at 50% 100%, rgba(77, 124, 15, 0.05) 0%, transparent 70%);
+    }
+
+    .project-card.featured .pn {
+      color: var(--feat-accent, var(--cy));
+    }
+
+    .project-card.featured:hover .ptag {
+      border-color: var(--cy-dim);
+      background: var(--cy-faint);
+    }
+
+    .project-card.featured:hover .pm {
+      color: var(--feat-accent-soft, var(--cy-soft));
+    }
+
+    .hackathon-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 5px 14px;
+      border-radius: 20px;
+      border: 1px solid var(--feat-accent-dim, var(--cy-dim));
+      background: var(--feat-accent-faint, var(--cy-faint));
+      font-size: 9px;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: var(--feat-accent, var(--cy));
+      margin-bottom: 18px;
+      font-weight: 500;
+      grid-column: 1 / -1;
+    }
+
+    .hackathon-badge .hb-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--feat-accent, var(--cy));
+      animation: pulse 2s infinite;
+      flex-shrink: 0;
+    }
+
+    .feat-desc {
+      font-size: 12px;
+      color: var(--mid);
+      line-height: 1.8;
+      margin-bottom: 22px;
+      grid-column: 1 / -1;
+    }
+
     .pn {
       font-size: 10px;
       color: var(--cy);
@@ -1143,6 +1271,10 @@
       color: var(--snow);
       margin-bottom: 12px;
       line-height: 1.25;
+    }
+
+    .project-card.featured .pt {
+      font-size: clamp(22px, 3.5vw, 34px);
     }
 
     .pd {
@@ -1180,12 +1312,16 @@
       bottom: 22px;
       right: 26px;
       font-family: var(--serif);
-      font-size: 38px;
+      font-size: 22px;
       font-weight: 300;
       color: var(--line);
       line-height: 1;
       pointer-events: none;
       transition: color .4s ease, transform .6s var(--spring);
+    }
+
+    .project-card.featured .pm {
+      font-size: 26px;
     }
 
     .project-card:hover .pm {
@@ -2454,28 +2590,22 @@
       <div class="section-line"></div>
     </div>
     <div class="projects-grid">
-      <div class="project-card reveal">
+
+      <div class="project-card featured reveal">
+        <div class="hackathon-badge"><span class="hb-dot"></span>2-2 Mini Project · Anurag Engineering College</div>
         <div class="pn">P.01</div>
-        <div class="pt">Semantic Segmentation Model</div>
-        <div class="pd">Led development of an advanced semantic segmentation model using PyTorch with transfer learning
+        <div class="pt">Image Segmentation Model</div>
+        <div class="pd">Led development of an advanced Image segmentation model using PyTorch with transfer learning
           from pre-trained ResNet architectures. Achieved 95% precision on Real-World Object Segmentation benchmarks
           using GPU-accelerated training environments.</div>
         <div class="ptags"><span class="ptag">PyTorch 2.0</span><span class="ptag">NumPy</span><span
             class="ptag">OpenCV</span><span class="ptag">ResNet</span><span class="ptag">U-Net</span></div>
         <div class="pm">95%</div>
       </div>
-      <div class="project-card reveal">
+
+      <div class="project-card featured reveal">
+        <div class="hackathon-badge"><span class="hb-dot"></span>Computer Vision · Academic Project</div>
         <div class="pn">P.02</div>
-        <div class="pt">Security Vulnerability Assessment</div>
-        <div class="pd">Comprehensive work on OWASP Top 10 vulnerabilities, secure coding in Python and Java,
-          penetration testing tools and real-world CTF challenges. Simulated threat modeling and cryptographic
-          implementations at IIITDM Kancheepuram bootcamp.</div>
-        <div class="ptags"><span class="ptag">OWASP</span><span class="ptag">Python</span><span class="ptag">Pen
-            Testing</span><span class="ptag">CTF</span><span class="ptag">Cryptography</span></div>
-        <div class="pm">CTF</div>
-      </div>
-      <div class="project-card reveal">
-        <div class="pn">P.03</div>
         <div class="pt">Facial Data Based Attendance System</div>
         <div class="pd">Built an automated attendance management system using real-time facial recognition with OpenCV
           and DeepFace. Detects and identifies faces from a live camera feed, matches against a registered database, and
@@ -2484,7 +2614,21 @@
             class="ptag">DeepFace</span><span class="ptag">SQLite</span><span class="ptag">NumPy</span></div>
         <div class="pm">CV</div>
       </div>
-      <div class="project-card reveal">
+
+      <div class="project-card featured reveal">
+        <div class="hackathon-badge"><span class="hb-dot"></span>Machine Learning · Predictive Analytics</div>
+        <div class="pn">P.03</div>
+        <div class="pt">EV Vehicle Demand Prediction</div>
+        <div class="pd">Built a machine learning model to forecast electric vehicle demand using historical sales,
+          infrastructure, and socioeconomic data. Trained a Random Forest ensemble achieving high accuracy in
+          predicting regional EV adoption trends — supporting data-driven policy and investment decisions.</div>
+        <div class="ptags"><span class="ptag">Python</span><span class="ptag">Random Forest</span><span
+            class="ptag">Scikit-learn</span><span class="ptag">Pandas</span><span class="ptag">Matplotlib</span></div>
+        <div class="pm">EV</div>
+      </div>
+
+      <div class="project-card featured reveal">
+        <div class="hackathon-badge"><span class="hb-dot"></span>Full-Stack Development · LLM Integration</div>
         <div class="pn">P.04</div>
         <div class="pt">Web Based AI Assistant</div>
         <div class="pd">Developed a full-stack, browser-based AI assistant powered by a large language model API.
@@ -2494,6 +2638,38 @@
             API</span><span class="ptag">Web Speech API</span><span class="ptag">JavaScript</span></div>
         <div class="pm">AI</div>
       </div>
+
+      <!-- ★ FEATURED: PraanAI -->
+      <div class="project-card featured reveal" id="project-praanai">
+        <div class="hackathon-badge"><span class="hb-dot"></span>AI &amp; Innovation Sprint · Anurag Engineering College</div>
+        <div class="pn">P.05 — HACKATHON</div>
+        <div class="pt">PraanAI</div>
+        <div class="pd">An AI-Powered Triage System for intelligent hospital bed allocation. PraanAI leverages machine
+          learning to assess patient severity, predict optimal bed assignments, and streamline emergency workflows —
+          reducing wait times and improving critical-care outcomes through data-driven decision making.</div>
+        <div class="ptags">
+          <span class="ptag">Python</span><span class="ptag">Flask</span><span class="ptag">Machine Learning</span>
+          <span class="ptag">NLP</span><span class="ptag">SQLite</span><span class="ptag">Healthcare AI</span>
+        </div>
+        <div class="pm">TRIAGE</div>
+      </div>
+
+      <!-- ★ FEATURED: Saagu360 -->
+      <div class="project-card featured reveal" id="project-saagu360">
+        <div class="hackathon-badge"><span class="hb-dot"></span>Hackathon · Consistency.AI · JatayuvAI · Anurag Engineering College</div>
+        <div class="pn">P.06 — HACKATHON</div>
+        <div class="pt">Saagu360</div>
+        <div class="pd">An AI-Powered Farmer Assistant designed to help farmers adapt AI into their daily agricultural
+          practices. Saagu360 provides crop disease detection via computer vision, AI-driven advisory for soil
+          health, weather-aware insights, multilingual support, and real-time market pricing — empowering rural
+          communities with accessible, intelligent farming tools.</div>
+        <div class="ptags">
+          <span class="ptag">React Native</span><span class="ptag">Flask</span><span class="ptag">Computer Vision</span>
+          <span class="ptag">Groq / Gemini</span><span class="ptag">OpenRouter</span><span class="ptag">AgriTech AI</span>
+        </div>
+        <div class="pm">AGRI</div>
+      </div>
+
     </div>
   </section>
 
@@ -2793,24 +2969,34 @@
       /* MODAL LOGIC */
       const projectsData = [
         {
-          id: "P.01", title: "Semantic Segmentation Model",
-          desc: "Led development of an advanced semantic segmentation model using PyTorch with transfer learning from pre-trained ResNet architectures. Achieved 95% precision on Real-World Object Segmentation benchmarks using GPU-accelerated training environments.",
+          id: "P.01", title: "Image Segmentation Model",
+          desc: "Led development of an advanced Image segmentation model using PyTorch with transfer learning from pre-trained ResNet architectures. Achieved 95% precision on Real-World Object Segmentation benchmarks using GPU-accelerated training environments.",
           details: "This project addresses the challenge of precise object boundaries in complex scenes. By integrating a ResNet backbone with a U-Net style decoder, we preserved high-resolution spatial feature maps while gaining deep semantic meaning.<br><br><strong>Key Metrics:</strong><br>- 95% Precision on validation set<br>- 60fps inference time on specialized hardware<br>- Custom augmentation pipeline handling varying lighting conditions."
         },
         {
-          id: "P.02", title: "Security Vulnerability Assessment",
-          desc: "Comprehensive work on OWASP Top 10 vulnerabilities, secure coding in Python and Java, penetration testing tools and real-world CTF challenges. Simulated threat modeling and cryptographic implementations at IIITDM Kancheepuram bootcamp.",
-          details: "Focused on building robust defense-in-depth strategies. Set up controlled environments using Docker to simulate multi-vector attacks, analyzing exploits such as SQL Injections, XSS, and broken access control.<br><br><strong>Highlights:</strong><br>- Top 10 finish in bootcamp CTF<br>- Designed secure authentication protocols using modern hash techniques."
+          id: "P.02", title: "Facial Data Based Attendance System",
+          desc: "Built an automated attendance management system using real-time facial recognition with OpenCV and DeepFace. Detects and identifies faces from a live camera feed, matches against a registered database.",
+          details: "Eliminates manual roll-calls and proxy attendance. Uses Haar Cascades/MTCNN for face detection and a simplified Siamese network architecture for verification.<br><br><strong>Architecture:</strong><br>Video feed → Frame extraction → Alignment → DeepFace encoding → Cosine similarity matching → SQLite logging."
         },
         {
-          id: "P.03", title: "Facial Data Based Attendance System",
-          desc: "Built an automated attendance management system using real-time facial recognition with OpenCV and DeepFace. Detects and identifies faces from a live camera feed, matches against a registered database.",
-          details: "Eliminates manual roll-calls and proxy attendance. Uses Haar Cascades/MTCNN for face detection and a simplified Siamese network architecture for verification.<br><br><strong>Architecture:</strong><br>Video feed -> Frame extraction -> Alignment -> DeepFace encoding -> Cosine similarity matching -> SQLite logging."
+          id: "P.03", title: "EV Vehicle Demand Prediction",
+          desc: "Built a machine learning model to forecast electric vehicle demand using historical sales, infrastructure, and socioeconomic data. Trained a Random Forest ensemble to predict regional EV adoption trends.",
+          details: "This project supports data-driven decision making in the EV sector by applying supervised learning to multi-dimensional regional datasets.<br><br><strong>Methodology:</strong><br>- Feature engineering on sales, charging station density, income levels, and policy indicators<br>- Random Forest ensemble with hyperparameter tuning via GridSearchCV<br>- SHAP values used for feature importance and model interpretability<br>- Cross-validation to ensure generalization across regions<br><br><strong>Key Insights:</strong><br>Charging infrastructure density and government incentives emerged as the top two demand predictors, informing actionable policy recommendations."
         },
         {
           id: "P.04", title: "Web Based AI Assistant",
           desc: "Developed a full-stack, browser-based AI assistant powered by a large language model API. Features contextual multi-turn conversation, voice input via Web Speech API, markdown-rendered responses.",
-          details: "Bridges the gap between raw API endpoints and seamless user experience. <br><br><strong>Features:</strong><br>- State management for multi-turn conversations<br>- Direct Voice-to-Text integration<br>- Asynchronous fetching to ensure smooth UI performance."
+          details: "Bridges the gap between raw API endpoints and seamless user experience.<br><br><strong>Features:</strong><br>- State management for multi-turn conversations<br>- Direct Voice-to-Text integration<br>- Asynchronous fetching to ensure smooth UI performance."
+        },
+        {
+          id: "P.05", title: "PraanAI",
+          desc: "An AI-Powered Triage System for intelligent hospital bed allocation, built during the AI &amp; Innovation Sprint at Anurag Engineering College.",
+          details: "PraanAI addresses the critical bottleneck in emergency departments — bed allocation delays that cost lives. The system uses an ML-based severity scoring engine that assesses patient vitals, symptoms, and medical history in real-time to prioritize and assign beds intelligently.<br><br><strong>Key Features:</strong><br>- AI-driven patient triage with severity scoring<br>- Real-time bed availability tracking (total, vacant, assigned)<br>- Role-based dashboards for doctors and nurses<br>- Nurse-led bed assignment workflow during patient intake<br>- Doctor analytics for bed utilization statistics<br><br><strong>Architecture:</strong><br>Patient intake → NLP symptom parsing → ML severity classifier → Bed availability engine → Auto-assignment with override controls → SQLite persistence<br><br><strong>Impact:</strong><br>Demonstrated potential to reduce ER wait times by up to 40% through intelligent prioritization and automated allocation."
+        },
+        {
+          id: "P.06", title: "Saagu360",
+          desc: "An AI-Powered Farmer Assistant that enables farmers to adapt AI to their daily agricultural practices, built during the hackathon conducted by Consistency.AI, JatayuvAI, and Anurag Engineering College.",
+          details: "Saagu360 bridges the technology gap in Indian agriculture by delivering AI-powered tools directly to farmers' phones in their native language.<br><br><strong>Key Features:</strong><br>- 🌿 Crop disease detection via AI Vision (camera scan)<br>- 🤖 AI Advisory engine powered by multi-tier LLM (Groq/Gemini/OpenRouter) with sub-second latency<br>- 🌐 Multilingual support — English, Hindi, Telugu<br>- 📊 Real-time Mandi pricing for crop market rates<br>- 🌤️ Weather-aware farm insights and recommendations<br>- 💾 Persistent history for chats, scans, and user profiles<br><br><strong>Architecture:</strong><br>React Native frontend → Flask backend → Multi-tier AI reasoning engine (Groq → Gemini → OpenRouter fallback) → deep-translator for localization → AsyncStorage for offline-first data<br><br><strong>Impact:</strong><br>Empowers rural communities with accessible, intelligent farming tools — making AI practical and useful for the Indian farmer."
         }
       ];
 
