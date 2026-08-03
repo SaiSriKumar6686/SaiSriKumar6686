@@ -9,10 +9,10 @@
 <img src="assets/divider.svg" width="100%"/>
 
 <p>
-  <a href="https://linkedin.com/in/YOUR-LINKEDIN"><img src="https://img.shields.io/badge/LinkedIn-1E293B?style=flat-square&logo=linkedin&logoColor=38BDF8" /></a>
-  <a href="https://YOUR-PORTFOLIO.dev"><img src="https://img.shields.io/badge/Portfolio-1E293B?style=flat-square&logo=vercel&logoColor=38BDF8" /></a>
-  <a href="mailto:your.email@example.com"><img src="https://img.shields.io/badge/Email-1E293B?style=flat-square&logo=gmail&logoColor=38BDF8" /></a>
-  <a href="https://github.com/YOUR-USERNAME"><img src="https://img.shields.io/badge/GitHub-1E293B?style=flat-square&logo=github&logoColor=38BDF8" /></a>
+  <a href="https://linkedin.com/in/saisrikumarparimi"><img src="https://img.shields.io/badge/LinkedIn-1E293B?style=flat-square&logo=linkedin&logoColor=38BDF8" /></a>
+  <a href="https://saisrikumar6686.github.io/SaiSriKumar6686/"><img src="https://img.shields.io/badge/Portfolio-1E293B?style=flat-square&logo=vercel&logoColor=38BDF8" /></a>
+  <a href="mailto:saisrikumarparimi@gmail.com"><img src="https://img.shields.io/badge/Email-1E293B?style=flat-square&logo=gmail&logoColor=38BDF8" /></a>
+  <a href="https://github.com/SaiSriKumar6686"><img src="https://img.shields.io/badge/GitHub-1E293B?style=flat-square&logo=github&logoColor=38BDF8" /></a>
 </p>
 
 </div>
@@ -21,9 +21,9 @@
 
 ## About
 
-I'm a final-year Computer Science student specializing in AI/ML, working at the intersection of computer vision and medical image analysis. My recent work centers on brain tumor MRI segmentation — comparing U-Net and Attention U-Net architectures and extending the pipeline with gradient-based explainability (Seg-Grad-CAM) to make model predictions interpretable to clinicians.
+I'm a final-year Computer Science student specializing in AI/ML, working at the intersection of computer vision and medical image analysis. My recent work centers on brain tumor MRI segmentation - comparing U-Net and Attention U-Net architectures and extending the pipeline with gradient-based explainability (Seg-Grad-CAM) to make model predictions interpretable to clinicians.
 
-I care about building systems that are technically rigorous and end-to-end functional — from model training under real hardware constraints to deployment as usable applications. Outside of coursework, I explore vision transformers, LLM-based retrieval systems, and the practical side of shipping ML products.
+I care about building systems that are technically rigorous and end-to-end functional - from model training under real hardware constraints to deployment as usable applications. Outside of coursework, I explore vision transformers, LLM-based retrieval systems, and the practical side of shipping ML products.
 
 <br>
 
@@ -67,11 +67,7 @@ I care about building systems that are technically rigorous and end-to-end funct
 <tr>
 <td><b>Frameworks</b></td>
 <td>
-<img src="https://img.shields.io/badge/Flask-1E293B?style=flat-square&logo=flask&logoColor=38BDF8"/>
-<img src="https://img.shields.io/badge/FastAPI-1E293B?style=flat-square&logo=fastapi&logoColor=38BDF8"/>
-<img src="https://img.shields.io/badge/React%20Native-1E293B?style=flat-square&logo=react&logoColor=38BDF8"/>
 <img src="https://img.shields.io/badge/Streamlit-1E293B?style=flat-square&logo=streamlit&logoColor=38BDF8"/>
-<img src="https://img.shields.io/badge/LangChain-1E293B?style=flat-square&logo=langchain&logoColor=38BDF8"/>
 </td>
 </tr>
 <tr>
@@ -80,7 +76,6 @@ I care about building systems that are technically rigorous and end-to-end funct
 <img src="https://img.shields.io/badge/Docker-1E293B?style=flat-square&logo=docker&logoColor=38BDF8"/>
 <img src="https://img.shields.io/badge/Hugging%20Face%20Spaces-1E293B?style=flat-square&logo=huggingface&logoColor=38BDF8"/>
 <img src="https://img.shields.io/badge/Vercel-1E293B?style=flat-square&logo=vercel&logoColor=38BDF8"/>
-<img src="https://img.shields.io/badge/Heroku-1E293B?style=flat-square&logo=heroku&logoColor=38BDF8"/>
 </td>
 </tr>
 <tr>
@@ -92,28 +87,17 @@ I care about building systems that are technically rigorous and end-to-end funct
 </td>
 </tr>
 <tr>
-<td><b>Databases</b></td>
-<td>
-<img src="https://img.shields.io/badge/MySQL-1E293B?style=flat-square&logo=mysql&logoColor=38BDF8"/>
-<img src="https://img.shields.io/badge/SQLite-1E293B?style=flat-square&logo=sqlite&logoColor=38BDF8"/>
-<img src="https://img.shields.io/badge/Neo4j-1E293B?style=flat-square&logo=neo4j&logoColor=38BDF8"/>
-<img src="https://img.shields.io/badge/FAISS-1E293B?style=flat-square&logo=meta&logoColor=38BDF8"/>
-</td>
-</tr>
-<tr>
 <td><b>Tools</b></td>
 <td>
 <img src="https://img.shields.io/badge/Git-1E293B?style=flat-square&logo=git&logoColor=38BDF8"/>
 <img src="https://img.shields.io/badge/GitHub%20Actions-1E293B?style=flat-square&logo=githubactions&logoColor=38BDF8"/>
 <img src="https://img.shields.io/badge/Jupyter-1E293B?style=flat-square&logo=jupyter&logoColor=38BDF8"/>
 <img src="https://img.shields.io/badge/VS%20Code-1E293B?style=flat-square&logo=visualstudiocode&logoColor=38BDF8"/>
-<img src="https://img.shields.io/badge/Postman-1E293B?style=flat-square&logo=postman&logoColor=38BDF8"/>
 </td>
 </tr>
 <tr>
 <td><b>Operating Systems</b></td>
 <td>
-<img src="https://img.shields.io/badge/Linux-1E293B?style=flat-square&logo=linux&logoColor=38BDF8"/>
 <img src="https://img.shields.io/badge/Windows-1E293B?style=flat-square&logo=windows&logoColor=38BDF8"/>
 </td>
 </tr>
@@ -133,7 +117,7 @@ MRI segmentation framework comparing U-Net and Attention U-Net baselines, extend
 
 `PyTorch` `U-Net` `Attention U-Net` `Grad-CAM`
 
-[Repository →](https://github.com/YOUR-USERNAME/brain-tumor-segmentation)
+[Repository →](https://github.com/SaiSriKumar6686/brain-tumor-segmentation)
 
 </td>
 <td width="50%" valign="top">
@@ -144,7 +128,7 @@ Crop-health assistant combining on-device image classification with LLM-based ad
 
 `React Native` `Flask` `EfficientNet-B0` `MobileNetV2`
 
-[Repository →](https://github.com/YOUR-USERNAME/ai-farmer-assistant)
+[Repository →](https://github.com/SaiSriKumar6686/farmer_ai_assistant)
 
 </td>
 </tr>
@@ -157,7 +141,7 @@ Real-time attendance platform using face embeddings and vector search, with anti
 
 `InsightFace` `RetinaFace` `FAISS` `Flask`
 
-[Repository →](https://github.com/YOUR-USERNAME/face-attendance-system)
+[Repository →](https://github.com/SaiSriKumar6686/face_recognition_based_attendance_system)
 
 </td>
 <td width="50%" valign="top">
@@ -168,7 +152,7 @@ Time-series forecasting system for electric vehicle charging demand, built to su
 
 `Python` `scikit-learn` `Pandas` `Time-Series`
 
-[Repository →](https://github.com/YOUR-USERNAME/ev-demand-forecasting)
+[Repository →](https://github.com/SaiSriKumar6686/EV-Vehicle-Demand-Prediction)
 
 </td>
 </tr>
@@ -193,14 +177,14 @@ Time-series forecasting system for electric vehicle charging demand, built to su
 
 <table>
 <tr>
-<td width="50%"><img src="https://github-readme-stats.vercel.app/api?username=YOUR-USERNAME&show_icons=true&theme=transparent&hide_border=true&title_color=2563EB&icon_color=38BDF8&text_color=94A3B8&bg_color=00000000" width="100%"/></td>
-<td width="50%"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR-USERNAME&layout=compact&theme=transparent&hide_border=true&title_color=2563EB&text_color=94A3B8&bg_color=00000000" width="100%"/></td>
+<td width="50%"><img src="https://github-readme-stats.vercel.app/api?username=SaiSriKumar6686&show_icons=true&theme=transparent&hide_border=true&title_color=2563EB&icon_color=38BDF8&text_color=94A3B8&bg_color=00000000" width="100%"/></td>
+<td width="50%"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SaiSriKumar6686&layout=compact&theme=transparent&hide_border=true&title_color=2563EB&text_color=94A3B8&bg_color=00000000" width="100%"/></td>
 </tr>
 </table>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=YOUR-USERNAME&theme=transparent&hide_border=true&background=00000000&stroke=2563EB&ring=2563EB&fire=38BDF8&currStreakLabel=38BDF8&sideLabels=94A3B8&currStreakNum=F8FAFC&sideNums=F8FAFC&dates=94A3B8" width="100%"/>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=SaiSriKumar6686&theme=transparent&hide_border=true&background=00000000&stroke=2563EB&ring=2563EB&fire=38BDF8&currStreakLabel=38BDF8&sideLabels=94A3B8&currStreakNum=F8FAFC&sideNums=F8FAFC&dates=94A3B8" width="100%"/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=YOUR-USERNAME&bg_color=00000000&color=38BDF8&line=2563EB&point=F8FAFC&hide_border=true&area=true" width="100%"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=SaiSriKumar6686&bg_color=00000000&color=38BDF8&line=2563EB&point=F8FAFC&hide_border=true&area=true" width="100%"/>
 
 <br>
 
@@ -214,14 +198,14 @@ Time-series forecasting system for electric vehicle charging demand, built to su
 
 ## Contribution Graph
 
-<img src="https://raw.githubusercontent.com/YOUR-USERNAME/YOUR-USERNAME/output/github-contribution-grid-snake-dark.svg" width="100%"/>
+<img src="https://raw.githubusercontent.com/SaiSriKumar6686/SaiSriKumar6686/output/github-contribution-grid-snake-dark.svg" width="100%"/>
 
 <br>
 
 ## Professional Timeline
 
 <table>
-<tr><td width="18%"><b>Student</b><br><sub>2023 – 2027</sub></td><td>B.Tech, Computer Science (AI/ML), JNTUH — coursework, ML Lab Teaching Assistant, GATE CS preparation</td></tr>
+<tr><td width="18%"><b>Student</b><br><sub>2023 – 2027</sub></td><td>B.Tech, Computer Science (AI/ML), JNTUH - coursework, GATE CS preparation</td></tr>
 <tr><td><b>Applied Research</b><br><sub>2025 – Present</sub></td><td>Medical image segmentation and explainable AI; internship-based applied ML work</td></tr>
 <tr><td><b>Open Source</b><br><sub>Ongoing</sub></td><td>Deployed ML systems on Hugging Face Spaces and Flask; hackathon and portfolio repositories</td></tr>
 <tr><td><b>AI Engineer</b><br><sub>2027 →</sub></td><td>Transitioning into full-time ML/AI engineering and research roles post-graduation</td></tr>
@@ -231,10 +215,10 @@ Time-series forecasting system for electric vehicle charging demand, built to su
 
 ## Certifications
 
-- NPTEL Elite + Silver — Data Analytics with Python, IIT Roorkee (Top 5%, ~15,000 candidates)
-- Secure Software Development Lifecycle — IIITDM Kancheepuram, MeitY ISEA Phase III
-- Summer Internship Fellowship 2026 — SRM University–AP (ML & Data Analytics track)
-- SustainAI Solutions Internship — 1M1B × Microsoft × MeitY Startup Hub
+- NPTEL Elite + Silver - Data Analytics with Python, IIT Roorkee (Top 5%, ~15,000 candidates)
+- Secure Software Development Lifecycle - IIITDM Kancheepuram, MeitY ISEA Phase III
+- Summer Internship Fellowship 2026 - SRM University–AP (ML & Data Analytics track)
+- SustainAI Solutions Internship - 1M1B × Microsoft × MeitY Startup Hub
 
 <br>
 
@@ -245,9 +229,9 @@ Time-series forecasting system for electric vehicle charging demand, built to su
 ### Let's Connect
 
 <p>
-  <a href="https://linkedin.com/in/YOUR-LINKEDIN"><img src="https://img.shields.io/badge/LinkedIn-0F172A?style=flat-square&logo=linkedin&logoColor=38BDF8"/></a>
-  <a href="https://YOUR-PORTFOLIO.dev"><img src="https://img.shields.io/badge/Portfolio-0F172A?style=flat-square&logo=vercel&logoColor=38BDF8"/></a>
-  <a href="mailto:your.email@example.com"><img src="https://img.shields.io/badge/Email-0F172A?style=flat-square&logo=gmail&logoColor=38BDF8"/></a>
+  <a href="https://linkedin.com/in/saisrikumarparimi"><img src="https://img.shields.io/badge/LinkedIn-0F172A?style=flat-square&logo=linkedin&logoColor=38BDF8"/></a>
+  <a href="[https://YOUR-PORTFOLIO.dev](https://saisrikumar6686.github.io/SaiSriKumar6686/)"><img src="https://img.shields.io/badge/Portfolio-0F172A?style=flat-square&logo=vercel&logoColor=38BDF8"/></a>
+  <a href="mailto:saisrikumarparimi@gmail.com"><img src="https://img.shields.io/badge/Email-0F172A?style=flat-square&logo=gmail&logoColor=38BDF8"/></a>
 </p>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2563EB,100:0F172A&height=100&section=footer" width="100%"/>
