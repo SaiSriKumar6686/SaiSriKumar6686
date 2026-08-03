@@ -47,7 +47,6 @@ I care about building systems that are technically rigorous and end-to-end funct
 <td><b>Programming</b></td>
 <td>
 <img src="https://img.shields.io/badge/Python-1E293B?style=flat-square&logo=python&logoColor=38BDF8"/>
-<img src="https://img.shields.io/badge/C++-1E293B?style=flat-square&logo=cplusplus&logoColor=38BDF8"/>
 <img src="https://img.shields.io/badge/Java-1E293B?style=flat-square&logo=openjdk&logoColor=38BDF8"/>
 <img src="https://img.shields.io/badge/SQL-1E293B?style=flat-square&logo=postgresql&logoColor=38BDF8"/>
 <img src="https://img.shields.io/badge/Bash-1E293B?style=flat-square&logo=gnubash&logoColor=38BDF8"/>
@@ -76,14 +75,6 @@ I care about building systems that are technically rigorous and end-to-end funct
 <img src="https://img.shields.io/badge/Docker-1E293B?style=flat-square&logo=docker&logoColor=38BDF8"/>
 <img src="https://img.shields.io/badge/Hugging%20Face%20Spaces-1E293B?style=flat-square&logo=huggingface&logoColor=38BDF8"/>
 <img src="https://img.shields.io/badge/Vercel-1E293B?style=flat-square&logo=vercel&logoColor=38BDF8"/>
-</td>
-</tr>
-<tr>
-<td><b>Cloud</b></td>
-<td>
-<img src="https://img.shields.io/badge/AWS-1E293B?style=flat-square&logo=amazonaws&logoColor=38BDF8"/>
-<img src="https://img.shields.io/badge/Google%20Cloud-1E293B?style=flat-square&logo=googlecloud&logoColor=38BDF8"/>
-<img src="https://img.shields.io/badge/Azure-1E293B?style=flat-square&logo=microsoftazure&logoColor=38BDF8"/>
 </td>
 </tr>
 <tr>
